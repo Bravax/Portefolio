@@ -24,11 +24,7 @@ jobs:
       - name: Install, build, and upload site
         uses: withastro/action@v3
         with:
-          # Décommentez et configurez si nécessaire
-          # path: . # Emplacement racine de votre projet Astro dans le dépôt (optionnel)
-          # node-version: 20 # Version de Node à utiliser pour le build (par défaut : 20)
-          # package-manager: yarn # Gestionnaire de paquets utilisé pour installer et build (optionnel)
-
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
